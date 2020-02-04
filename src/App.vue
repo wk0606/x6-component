@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <el-input v-model="name" placeholder="请输入内容"></el-input>
+    <x-input size="mini" type="card" v-model="name" :editable="true"/>
   </div>
 </template>
 
 <script>
+import XInput from './components/Input/index'
 export default {
   name: 'App',
   data(){
     return {
-      name: ''
+      name: 0
     }
-  }
+  },
+  components: { XInput }
 }
 </script>
 
