@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <el-input v-model="name" placeholder="请输入内容"></el-input>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return {
+      name: ''
+    }
   }
 }
 </script>
